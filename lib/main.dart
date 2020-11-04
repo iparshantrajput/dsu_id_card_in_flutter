@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,378 +13,73 @@ class firstApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'firstApp',
       theme: ThemeData(
-        primaryColor: Colors.grey[800],
+        primaryColor: Colors.red[900],
       ),
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.grey[800],
-          title: Center(
-            child: Text(
-              "Parshant Rajput",
-              textAlign: TextAlign.center,
-            ),
-          ),
+          //backgroundColor: Colors.transparent,
+          elevation: .0,
         ),
         body: Container(
-          color: Colors.black,
+          color: Colors.white,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                height: 200,
-                color: Colors.black12,
-                child: Text(
-                  "181004.5254",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 50,
-                  ),
+                width: 395.7,
+                height: 170,
+                color: Colors.red[900],
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Image.asset(
+                      'assets/images/dsu.png',
+                      width: 120,
+                      height: 120,
+                    ),
+                    Text(
+                      'DHA \n SUFFA \n UNIVERSITY',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    Image.asset(
+                      'assets/images/pha.png',
+                      width: 120,
+                      height: 120,
+                    ),
+                  ],
                 ),
               ),
+              SizedBox(
+                height: 30,
+              ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "C",
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "±",
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "%",
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "/",
-                      style: TextStyle(
-                        fontSize: 40,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.orange[600],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.orange[400],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
+                  Image.asset(
+                    'assets/images/cs181004.png',
+                    fit: BoxFit.cover,
                   ),
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "7",
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "8",
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "9",
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "*",
-                      style: TextStyle(
-                        fontSize: 40,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.orange[600],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.orange[400],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                ],
+              SizedBox(
+                height: 20,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  MaterialButton(
-                    onPressed: () {},
+                  Center(
                     child: Text(
-                      "4",
+                      'Parshant. \n CS181004',
                       style: TextStyle(
-                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black,
                       ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "5",
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "6",
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "-",
-                      style: TextStyle(
-                        fontSize: 40,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.orange[600],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.orange[400],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "1",
-                      style: TextStyle(
-                        fontSize: 35,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "2",
-                      style: TextStyle(
-                        fontSize: 35,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "3",
-                      style: TextStyle(
-                        fontSize: 35,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "+",
-                      style: TextStyle(
-                        fontSize: 40,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.orange[600],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.orange[400],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "0",
-                      style: TextStyle(
-                        fontSize: 35,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 190,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      ".",
-                      style: TextStyle(
-                        fontSize: 35,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.grey[500],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.grey[300],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                  ),
-                  MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      "=",
-                      style: TextStyle(
-                        fontSize: 40,
-                      ),
-                    ),
-                    textColor: Colors.black,
-                    splashColor: Colors.orange[600],
-                    height: 90,
-                    minWidth: 95,
-                    color: Colors.orange[400],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50.0),
+                      textAlign: TextAlign.center,
                     ),
                   ),
                 ],
